@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Part2";
+}
+
+<h2>Part2</h2>
+<div ng-controller="Part2Controller">
+    <div style="font-weight:bold">
+        Contact Details
+    </div>
+    <table>
+        <tr>
+            <td>First Name :</td>
+            <td>{{Contact.FirstName}}</td>
+        </tr>
+        <tr>
+            <td>Last Name : </td>
+            <td>{{Contact.LastName}}</td>
+        </tr>
+        <tr>
+            <td>Contact No1:</td>
+            <td>{{Contact.ContactNo1}}</td>
+        </tr>
+        <tr>
+            <td>Contact No2:</td>
+            <td>{{Contact.ContactNo2}}</td>
+        </tr>
+        <tr>
+            <td>Email ID:</td>
+            <td>{{Contact.EmailID}}</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>{{Contact.Address}}</td>
+        </tr>
+    </table>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/AngularController/Part2Controller.js"></script>
+}
